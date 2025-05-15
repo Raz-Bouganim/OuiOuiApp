@@ -77,8 +77,6 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
 
-
-
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
