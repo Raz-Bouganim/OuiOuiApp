@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OuiOui</string>
+    <string name="item_place_place_name">Place name</string>
+    <string name="item_place_category">Category (Optional)</string>
 </resources>

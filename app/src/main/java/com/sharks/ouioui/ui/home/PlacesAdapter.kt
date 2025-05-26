@@ -21,8 +21,15 @@ class PlacesAdapter : ListAdapter<PlaceShort, PlacesAdapter.PlaceViewHolder>(Dif
     }
 
     inner class PlaceViewHolder(private val binding: ItemPlaceBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(place: PlaceShort){
+        fun bind(place: PlaceShort) {
             binding.placeName.text = place.name ?: "(No name)"
+            binding.placeKind.text = place.kinds ?: ""
+
+            // future image support (Using Glide, need to uncomment the code below)
+            // Glide.with(binding.placeImage.context)
+            //     .load(place.imageUrl)
+            //     .placeholder(R.drawable.placeholder)
+            //     .into(binding.placeImage)
         }
     }
 
